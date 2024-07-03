@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <div class="container">
+            <form>
+                <label>
+                    <span class="span1"></span>
+                    <input type="text" class="input1" placeholder="Введите число">
+                </label>
+                <label>
+                    <span class="span2"></span>
+                    <input type="text" class="input2" placeholder="Введите число">
+                </label>
+                <div class="button_number">
+                    <button disabled>Отправить</button>
+                    <h3 class="result">0</h3>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #1d2329;
+            margin: 0;
+        }
+
+        .container {
+            width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+            align-items: center;
+            display: flex;
+            height: 100vh;
+        }
+
+        form {
+            width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 25px;
+            border-left: 1px solid #7e8490;
+            border-top: 1px solid #62666e;
+            background-color: #323741;
+            border-radius: 25px;
+            font-family: 'Monserrat' , 'Arial';
+        }
+
+        span {
+            font-family: 'Monserrat' , 'Arial';
+            margin: 0px 0px 5px 10px;
+            display: block;
+            color: red;
+        }
+
+        input {
+            border-radius: 25px;
+            border: 1px solid #232832;
+            background-color: #232832;
+            color: #fff;
+            width: 100%;
+            margin-bottom: 15px;
+            padding: 25px;
+            outline: none;
+        }
+
+        .button_number {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        button {
+            padding: 25px 35px;
+            background-color: #0070fd;
+            color: #fff;
+            border-radius: 25px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 700;
+        }
+
+        button:disabled {
+            opacity: 0.2;
+            cursor: not-allowed;
+        }
+
+        button:hover {
+            box-shadow: 0px 10px 30px 5px #0070fd;
+        }
+
+        h3 {
+            color: #fff;
+            font-size: 35px;
+        }
+
+       
+    </style>
+
+    <script src="main.js"></script>
+</body>
+</html>
